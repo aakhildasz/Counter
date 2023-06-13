@@ -1,86 +1,134 @@
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
 }
 
-
-
-#value {
-    font-weight: 700;
-    font-size: 70px;
-    justify-content: center;
+body {
+    background: rgb(23, 23, 23);
 }
 
-
-
-.btn-increase {
-    padding: 5px;
-    color: black;
-    background-color: white;
-    font-size: large;
-    border-radius: 10px;
-    text-transform:uppercase;
-    margin: 10px;
-    border-width: 3px;
-}
-
-.btn-decrease {
-    padding: 5px;
-    color: black;
-    background-color: white;
-    font-size: large;
-    border-radius: 10px;
-    text-transform:uppercase;
-    margin: 10px;
-    border-width: 3px;
-}
-
-.reset {
-    padding: 5px;
-    color: black;
-    background-color: white;
-    font-size: large;
-    border-radius: 10px;
-    text-transform:uppercase;
-    margin: 10px;
-    border-width: 3px;
-}
-
-
-.button-container {
+main {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 171px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-bottom: 2.5%;
-    
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+
+
+}
+
+main .container {
+
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.head {
-    margin-top: 10%;
+main .container .head {
+    color: whitesmoke;
+}
+
+main .container .value{
+    color: whitesmoke;
+    margin-top: 50px;
+    border: 2px solid whitesmoke;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 
 
-.btn-increase:hover {
-    background-color: lightgreen;
+
+main .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 10px;
+    /* border: 2px solid whitesmoke; */
+    border-radius: 5px;
+
+}
+
+
+main .button-container .btn-decrease {
+    font-size: large;
+    padding: 25px;
+    margin: 10px;
+    height: 65px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border-style: none;
+    background: whitesmoke;
     cursor: pointer;
 }
 
-.btn-decrease:hover {
-    background-color: rgb(189, 75, 75);
+main .button-container .btn-decrease:hover {
+    background: rgb(218, 140, 140);
+}
+
+main .button-container .btn-increase {
+    font-size: large;
+    padding: 25px;
+    margin: 10px;
+    height: 65px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border-style: none;
+    background: whitesmoke;
     cursor: pointer;
 }
 
-.reset:hover {
-    background-color: black;
-    color: white;
+main .button-container .btn-increase:hover{
+    background: rgb(180, 255, 180);
+}
+
+main .button-container .reset {
+    font-size: large;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 65px;
+    width: 120px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-style: none;
+    background: whitesmoke;
     cursor: pointer;
+}
+
+main .button-container .reset:hover {
+    background: rgb(250, 250, 174);
+}
+
+@media (max-width: 1283px) {
+    main .button-container {
+        flex-direction: column;
+        /* border: 2px solid whitesmoke; */
+        border-radius: 5px;
+    }
+
+    main {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 2px solid whitesmoke;
+        border-radius: 5px;
+        padding: 40px;
+    }
 }
